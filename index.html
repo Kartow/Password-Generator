@@ -1,0 +1,29 @@
+<!DOCTYPE html>
+<html lang="pl-PL">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Password Generator</title>
+    <link rel="stylesheet" href="style.css">
+</head>
+<body>
+    <h1>Password Generator</h1>
+    <form>
+        <label for="minlength">Password length:</label>
+        <input type="number" id="minlength" name="minlength" min="1" max="40">
+        <p>Must include:</p>
+        <input type="checkbox" id="capital" name="capital">
+        <label for="capital">Capital letter</label>
+        <br>
+        <input type="checkbox" id="number" name="number">
+        <label for="number">Number</label>
+        <br>
+        <input type="checkbox" id="special" name="special">
+        <label for="special">Special character</label>
+    </form>
+    <button type="submit" onclick="generatePassword(minlength.value, capital.checked, number.checked, special.checked)">Generate</button>
+    <div class="passwordContainer"><h2 id="password"></h2></div>
+
+    <script src="script.js"></script>
+</body>
+</html>
