@@ -24,7 +24,7 @@ function generatePassword(minlength, capital, number, special){
     console.log(minlength + capital + number + special);
     password = "";
 
-    if (!minlength){
+    if (!minlength || minlength <= 0){
         document.getElementById("password").innerHTML = "Enter the length!";
     } else {
         for (let i = 0; i<minlength; i++){
