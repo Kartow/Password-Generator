@@ -21,7 +21,6 @@ function specialAdd(a){
 }
 
 function generatePassword(minlength, capital, number, special){
-    console.log(minlength + capital + number + special);
     password = "";
 
     if (!minlength || minlength <= 0){
