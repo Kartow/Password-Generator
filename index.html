@@ -21,9 +21,13 @@
         <input type="checkbox" id="special" name="special">
         <label for="special">Special character</label>
     </form>
-    <button type="submit" onclick="generatePassword(minlength.value, capital.checked, number.checked, special.checked)">Generate</button>
+    <button id="submit" type="submit" onclick="generatePassword(minlength.value, capital.checked, number.checked, special.checked)">Generate</button>
+    <button id="clean" onclick="cleanList()">Clean previous</button>
     <div class="passwordContainer"><h2 id="password"></h2></div>
+    <h3>Previous passwords:</h3>
+    <ul id="passList"></ul>
 
-    <script src="script.js"></script>
+    <script src="password.js"></script>
+    <script src="list.js"></script>
 </body>
 </html>
