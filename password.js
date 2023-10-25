@@ -36,5 +36,7 @@ function generatePassword(minlength, capital, number, special){
         if (special) specialAdd(specials);
 
         document.getElementById("password").innerHTML = password;
+
+        addtoList();
     }
 }
